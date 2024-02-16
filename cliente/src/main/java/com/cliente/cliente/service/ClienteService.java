@@ -70,6 +70,7 @@ public class ClienteService {
             cliente = optionalCliente.get();
             cliente = Cliente
                     .builder()
+                    .id(id)
                     .CNPJ(clienteDTO.getCNPJ())
                     .CPF(clienteDTO.getCPF())
                     .idade(clienteDTO.getIdade())
